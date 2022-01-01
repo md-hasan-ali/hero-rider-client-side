@@ -1,12 +1,8 @@
-// import necessary file 
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import Navigation from '../../Sheard/Navigarion/Navigation';
-import { useForm } from "react-hook-form";
-import './rider.css'
 
-
-// Rider Founctional Component
-const Rider = () => {
+const Driving = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         if (data.Password1 !== data.Password2) {
@@ -18,9 +14,10 @@ const Rider = () => {
     return (
         <div>
             <Navigation></Navigation>
+
             <div className="container mb-5">
                 <div className="section-title text-center">
-                    <h2 className='pt-5'>Ragistration As a Rider</h2>
+                    <h2 className='pt-5'>Ragistrations as Driving Lesson</h2>
                 </div>
                 <div className="row">
                     <div className="col-md-7 mx-auto">
@@ -45,7 +42,7 @@ const Rider = () => {
 
                                 <input type='password' placeholder='Confirm_Password' {...register("Password2", { required: true })} />
 
-                                <input className='btn btn-success' type="submit" value='Ragistration Rider' />
+                                <input className='btn btn-success' type="submit" value='Ragistration Driving Lesson Learner' />
                             </form>
                         </div>
                     </div>
@@ -55,4 +52,4 @@ const Rider = () => {
     );
 };
 
-export default Rider;
+export default Driving;
