@@ -1,0 +1,12 @@
+/* Navigation CSS  */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
