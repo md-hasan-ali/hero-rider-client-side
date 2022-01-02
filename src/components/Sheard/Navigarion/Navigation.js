@@ -11,9 +11,7 @@ const Navigation = () => {
             <Container>
                 <Navbar.Brand as={Link} to="/">Hero Rider</Navbar.Brand>
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Rider</Nav.Link>
-                    <Nav.Link href="#pricing">Driving Lessons</Nav.Link>
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
